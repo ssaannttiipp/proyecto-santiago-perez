@@ -229,6 +229,13 @@ grid-template-areas:
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 1s;
+    
+}
+
+.grid__imagen:hover {
+    transform: scale(0.8);
+    overflow: hidden;
 }
 .titulo_mobile{
     display: none;
@@ -399,4 +406,16 @@ background: linear-gradient(90deg, rgba(2,0,36,0.8410714627647934) 0%, rgba(53,1
      "ele7"
      "ele8";
    }
+   .grid__imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: none;
+    
+}
+.grid__imagen:hover {
+    transform: none;
+    overflow: hidden;
+}
+
 }
