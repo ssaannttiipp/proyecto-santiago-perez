@@ -6,10 +6,12 @@
 
 .header {
     font-family: sans-serif;
-    background: rgb(177,2,44);
+    background: rgb(135, 1, 32);
     background: linear-gradient(90deg, rgba(177,2,44,1) 0%, rgba(130,11,56,0.9026961126247374) 100%);
-    min-width: fit-content;
+    padding: 1rem;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 .logo_copa{
@@ -17,19 +19,26 @@
     width: 200px;
     height: 120px;
 }
+
+.nav {
+   
+    padding: 1rem;
+}
 .lista{
-     right:0;
-     text-align: end;
-    flex: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     
 }
 
 .enlace {
-    
+    margin-left: 16px;
     flex: 1;
     text-decoration: none;
     color: white;
     padding: 0.3rem;
+    
     
 }
 
@@ -37,6 +46,13 @@ header ul li {
     display: inline-block;
 }
 
+.header__open {
+    display: none;
+}
+
+.nav__item--close {
+    display: none;
+}
 .medio {
    
    font-family: 'Courier New', Courier, monospace;
@@ -83,7 +99,7 @@ header ul li {
     grid-area: cua2;
     font-size: 32px;
     position: center;
-    padding: 3rem;
+    margin-top: 3rem;
     
 }
 
@@ -92,7 +108,6 @@ header ul li {
     font-size: 26px;
     color: rgb(214, 194, 45);
     position: center;
-    padding: -4rem;
 }
 
 .video{
@@ -233,6 +248,8 @@ grid-template-areas:
     
 }
 
+
+
 .grid__imagen:hover {
     transform: scale(0.8);
     overflow: hidden;
@@ -244,6 +261,27 @@ grid-template-areas:
  display: none;
 }
 
+.sombra{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.279);
+}
+
+.fondo_torneo{
+    padding: 2rem;
+    background: rgb(24,192,219);
+background: linear-gradient(90deg, rgba(24,192,219,0.8634804263502276) 1%, rgba(22,62,231,0.8074580173866421) 40%, rgba(22,62,231,0.9110994739692753) 99%);
+}
+.lead{
+    color: white;
+}
+
+.titulo_torneo{
+    text-decoration: underline;
+}
+.table{
+    color: white;
+}
+
 @media screen and (max-width: 1023px) {
     .header{
         flex-direction: column;
@@ -251,6 +289,7 @@ grid-template-areas:
 }
 
 @media screen and (max-width: 768px) {
+   
     .grid {
         padding: 2rem;
         border: 2px solid brown;
@@ -276,11 +315,10 @@ background: linear-gradient(90deg, rgba(2,0,36,0.8410714627647934) 0%, rgba(53,1
         background: rgb(219,167,24);
         background: linear-gradient(90deg, rgba(219,167,24,0.9167017148656338) 3%, rgba(183,22,231,0.9110994739692753) 100%);
     }
-   
     
     .titulo_copa{
         font-size: 25px;
-        color: rgb(16, 16, 16);
+        color: rgb(54, 23, 149);
     }
     
   .video{
@@ -321,16 +359,57 @@ background: linear-gradient(90deg, rgba(24,156,219,0.9167017148656338) 2%, rgba(
 
 @media screen and (max-width: 600px) {
    
-
-    .header {
-        
-        flex-direction: column;
+    .nav{
+        display: none;
     }
+
+   .header{
+       flex-direction: row
+   }
+   .header__open {
+    display: block;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
 
     .logo_copa{
         width: 150;
         height: 100;
     }
+
+    #lateral {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        transition: right 1s;
+    }
+    .lista{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+    }
+    .nav__item--close {
+        display: block;
+    }
+
+    .nav__item {
+        margin-left: 0;
+    }
+
+
+    #lateral:target {
+        right: 0;
+    }
+
     .medio{
         text-align: center;
         border-style: none;
