@@ -282,6 +282,11 @@ background: linear-gradient(90deg, rgba(24,192,219,0.8634804263502276) 1%, rgba(
     color: white;
 }
 
+.balon_mobil{
+    display: none;
+}
+
+
 @media screen and (max-width: 1023px) {
     .header{
         flex-direction: column;
@@ -497,4 +502,16 @@ background: linear-gradient(90deg, rgba(2,0,36,0.8410714627647934) 0%, rgba(53,1
     overflow: hidden;
 }
 
+.balon_mobil{
+    display: flex;
+    padding: 1rem
+;
+}
+.mobil_hide{
+    display: none;
+}
+.fondo_torneo{
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.8634804263502276) 1%, rgba(9,211,235,0.8074580173866421) 47%, rgba(0,4,22,0.9110994739692753) 99%);
+}
 }
