@@ -1,0 +1,96 @@
+.grid {
+    padding: 2rem;
+    border: 2px solid brown;
+    min-height: 500px;
+    display: grid;
+    background: rgba(177, 142, 2, 0.601);
+  background: linear-gradient(90deg, rgba(177, 142, 2, 0.726) 0%, rgba(206, 29, 6, 0.732) 50%, rgba(241,184,11,0.9026961126247374) 100%);
+  grid-template-columns: repeat(2,50%) ;
+  grid-template-rows: repeat(4,400px);
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 20px;
+  grid-template-areas:
+    "ele1 ele2"
+    "ele3 ele4"
+    "ele5 ele6"
+    "ele7 ele8";
+
+    &__ele1{
+        grid-area: ele1;
+        position: relative;
+        text-align: center;
+    
+    }
+    
+    &__ele2{
+        grid-area: ele2;
+        position: relative;
+        text-align: center;
+    }
+    
+    &__ele3{
+        grid-area: ele3;
+        position: relative;
+        text-align: center;
+    }
+    &__ele4{
+        grid-area: ele4;
+        position: relative;
+        text-align: center;
+    }
+    &__ele5{
+        grid-area: ele5;
+       position: relative;
+       text-align: center;
+    }
+    &__ele6{
+        grid-area: ele6;
+        position: relative;
+        text-align: center;
+    }
+    &__ele7{
+        grid-area: ele7;
+        position: relative;
+        text-align: center;
+    }
+    &__ele8{
+        grid-area: ele8;
+        position: relative;
+        text-align: center;
+    }
+    
+    &__nombre{
+     color: aliceblue;
+     font-family: sans-serif;
+     top: 1rem;
+     left: 1rem;
+     position: absolute;
+     background-color: rgba(0, 0, 0, 0.523);
+    }
+    
+    &__capacidad{
+     font-family: sans-serif;   
+     bottom: 0%;
+     right: 0%;
+     position: absolute;
+     color: aliceblue;
+     background-color: rgba(0, 0, 0, 0.188);
+     
+    }
+    
+    &__imagen{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 1s;
+        &:hover {
+          transform: scale(0.8);
+          overflow: hidden;
+      }
+    }
+  }
+ 
+  
+  
+  
