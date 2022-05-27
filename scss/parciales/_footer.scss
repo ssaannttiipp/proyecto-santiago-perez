@@ -3,9 +3,8 @@
     background: $color-principal;
     min-width: fit-content;
     display: flex;
-    align-items: center;
-    text-align: center;
-    position: relative;
+    
+    
     
     .terminos{
         color: white;
@@ -34,13 +33,13 @@
     li {
     display: block;
     }
-   &_mobile{
+   .footer_mobile{
     display: none;
    }
    
 
 
-    & .terminos{
+    .footer .terminos{
         display: inline-block;
     }
 }     

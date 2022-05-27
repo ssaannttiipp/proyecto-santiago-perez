@@ -1,5 +1,5 @@
 .medio {
-   
+ 
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
     background: rgb(166,3,50);
@@ -16,55 +16,49 @@
      "cua1 cua2 cua3";
      justify-items: stretch;
      align-items: stretch;
+   
+   
+   
+   .grid_cua1{
+     grid-area: cua1;
+     position: relative;
+     text-align: center;
+     object-fit: cover;
+   }
+   
+   .grid_cua2{
+     grid-area: cua2;
+     position: relative;
+     text-align: center;
+    align-items: center;
+   
+   }
+   .grid_cua3{
+     grid-area: cua3;
+     position: relative;
+     text-align: center;
+     object-fit: cover;
+   }
+   
+   .titulo {
+     grid-area: cua2;
+     font-size: 32px;
+     position: center;
+     margin-top: 3rem;
+     
+   }
+   
+   .titulo_copa {
+     grid-area: cua2;
+     font-size: 26px;
+     color: rgb(214, 194, 45);
+     position: center;
+   }
+   
+   .video{
+     padding: 0.5rem;
+     height: 300px;
+     width: 600px;
+   }
 
-     .grid_cua1{
-        grid-area: cua1;
-        position: relative;
-        text-align: center;
-        object-fit: cover;
-    }
-    
-    .grid_cua2{
-        grid-area: cua2;
-        position: relative;
-        text-align: center;
-       align-items: center;
-
-       .titulo {
-        grid-area: cua2;
-        font-size: 32px;
-        position: center;
-        margin-top: 3rem;
-        
-    }
-    
-    .titulo_copa {
-        grid-area: cua2;
-        font-size: 26px;
-        color: rgb(214, 194, 45);
-        position: center;
-    }
-    .video{
-        padding: 0.5rem;
-        height: 300px;
-        width: 600px;
-    }
-    .titulo_mobile{
-       display: none;
-   } 
-    
-    }
-    .grid_cua3{
-        grid-area: cua3;
-        position: relative;
-        text-align: center;
-        object-fit: cover;
-    }
-    
- 
- }
- 
- 
- 
- 
- 
+}

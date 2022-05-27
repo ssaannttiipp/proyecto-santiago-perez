@@ -16,51 +16,51 @@
     "ele5 ele6"
     "ele7 ele8";
 
-    &__ele1{
+    .grid__ele1{
         grid-area: ele1;
         position: relative;
         text-align: center;
     
     }
     
-    &__ele2{
+    .grid__ele2{
         grid-area: ele2;
         position: relative;
         text-align: center;
     }
     
-    &__ele3{
+    .grid__ele3{
         grid-area: ele3;
         position: relative;
         text-align: center;
     }
-    &__ele4{
+    .grid__ele4{
         grid-area: ele4;
         position: relative;
         text-align: center;
     }
-    &__ele5{
+    .grid__ele5{
         grid-area: ele5;
        position: relative;
        text-align: center;
     }
-    &__ele6{
+    .grid__ele6{
         grid-area: ele6;
         position: relative;
         text-align: center;
     }
-    &__ele7{
+    .grid__ele7{
         grid-area: ele7;
         position: relative;
         text-align: center;
     }
-    &__ele8{
+    .grid__ele8{
         grid-area: ele8;
         position: relative;
         text-align: center;
     }
     
-    &__nombre{
+    .grid__nombre{
      color: aliceblue;
      font-family: sans-serif;
      top: 1rem;
@@ -69,7 +69,7 @@
      background-color: rgba(0, 0, 0, 0.523);
     }
     
-    &__capacidad{
+    .grid__capacidad{
      font-family: sans-serif;   
      bottom: 0%;
      right: 0%;
@@ -79,7 +79,7 @@
      
     }
     
-    &__imagen{
+    .grid__imagen{
         width: 100%;
         height: 100%;
         object-fit: cover;
