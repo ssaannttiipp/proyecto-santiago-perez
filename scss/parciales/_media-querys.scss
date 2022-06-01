@@ -43,6 +43,18 @@ background: linear-gradient(90deg, rgba(2,0,36,0.8410714627647934) 0%, rgba(53,1
 
   }
 
+  .rounded{
+      display: none;
+  }
+
+  .img-fluid{
+      display: flex;
+      
+      
+      
+
+  }
+
     .footer{
         display: none;
     }
@@ -222,7 +234,7 @@ background: linear-gradient(90deg, rgba(2,0,36,0.8410714627647934) 0%, rgba(53,1
     display: none;
 }
 .fondo_torneo{
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,0.8634804263502276) 1%, rgba(9,211,235,0.8074580173866421) 47%, rgba(0,4,22,0.9110994739692753) 99%);
+    background: rgb(16,220,232);
+background: linear-gradient(90deg, rgba(16,220,232,0.9699230033810399) 11%, rgba(3,210,170,0.9335084375547094) 99%);
 }
 }

@@ -1,39 +1,10 @@
+$color-principal: linear-gradient(90deg, #b1022c 0%, rgba(130, 11, 56, 0.902696) 100%);
 
-$color-principal: linear-gradient(90deg, rgba(166,3,50,1) 0%, rgba(68,96,199,1) 39%, rgba(55,108,218,0.9279061966583508) 55%, rgba(219,17,93,0.9026961126247374) 100%);
-
-
-$redes: ( /*Declaramos nuestro mapa*/
-        twitter: #55acee,
-        facebook:  #3a5795,
-        instagram: #a81292,
-        youtube: rgb(195, 75, 75)
-
-); 
-/*Creamos el bucle para usar los valores del mapa*/
-@each $clave, $valor in $redes {
-   .btn--#{$clave} {
-       background-color: $valor;
-   }
-}
-
-@mixin flex ($direction, $eje-principal, $eje-secundario) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $eje-principal;
-    align-items: $eje-secundario;
-
-}
-.header {
-    @include flex(row, space-between, center );
-}
-
-.lista{
-    @include flex(row, space-between, center);
-}
-
-.footer{
-    @include flex(row, space-between, center);
-    text-align: center;
-    position: relative;
-}
+$redes: (
+    /*Declaramos nuestro mapa*/
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: #a81292,
+    youtube: rgb(195, 75, 75)
+);
 
