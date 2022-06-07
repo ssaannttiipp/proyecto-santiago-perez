@@ -15,18 +15,18 @@
   align-items: center;
 }
 
-.header .nav {
+.nav {
   padding: 1rem;
 }
 
-.header .lista {
+.lista {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.header .enlace {
+.enlace {
   margin-left: 16px;
   flex: 1;
   text-decoration: none;
@@ -34,15 +34,15 @@
   padding: 0.3rem;
 }
 
-.header ul li {
+header ul li {
   display: inline-block;
 }
 
-.header .header__open {
+.header__open {
   display: none;
 }
 
-.header .nav__item--close {
+.nav__item--close {
   display: none;
 }
 
@@ -118,6 +118,11 @@
   align-items: center;
 }
 
+.medio .grid_cua2 .video {
+  padding: 0.5rem;
+  min-width: fit-content;
+}
+
 .medio .grid_cua3 {
   grid-area: cua3;
   position: relative;
@@ -137,12 +142,6 @@
   font-size: 26px;
   color: #d6c22d;
   position: center;
-}
-
-.medio .video {
-  padding: 0.5rem;
-  height: 300px;
-  width: 600px;
 }
 
 .grid {
@@ -461,7 +460,7 @@
     border: none;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 220px);
-    grid-template-areas: "ele1" "ele2" "ele3" "ele4"  "ele5" "ele6" "ele7" "ele8";
+    grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5" "ele6" "ele7" "ele8";
   }
   .grid__imagen {
     width: 100%;

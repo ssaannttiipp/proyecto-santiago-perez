@@ -1,64 +1,66 @@
 .medio {
- 
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
-    background: rgb(166,3,50);
-    background: linear-gradient(90deg, rgba(166,3,50,1) 0%, rgba(68,96,199,1) 39%, rgba(55,108,218,0.9279061966583508) 55%, rgba(219,17,93,0.9026961126247374) 100%);
+
+  font-family: 'Courier New', Courier, monospace;
+  align-items: center;
+  background: rgb(166, 3, 50);
+  background: linear-gradient(90deg, rgba(166, 3, 50, 1) 0%, rgba(68, 96, 199, 1) 39%, rgba(55, 108, 218, 0.9279061966583508) 55%, rgba(219, 17, 93, 0.9026961126247374) 100%);
+  text-align: center;
+  color: blanchedalmond;
+  border: solid black;
+  display: grid;
+  min-height: 500px;
+  grid-template-columns: 13% 74% 13%;
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas:
+    "cua1 cua2 cua3"
+    "cua1 cua2 cua3";
+  justify-items: stretch;
+  align-items: stretch;
+
+
+
+  .grid_cua1 {
+    grid-area: cua1;
+    position: relative;
     text-align: center;
-    color: blanchedalmond;
-    border: solid black;
-    display: grid;
-    min-height: 500px;
-    grid-template-columns: 13% 74% 13%;
-    grid-template-rows: repeat(2,50%);
-    grid-template-areas: 
-     "cua1 cua2 cua3"
-     "cua1 cua2 cua3";
-     justify-items: stretch;
-     align-items: stretch;
-   
-   
-   
-   .grid_cua1{
-     grid-area: cua1;
-     position: relative;
-     text-align: center;
-     object-fit: cover;
-   }
-   
-   .grid_cua2{
-     grid-area: cua2;
-     position: relative;
-     text-align: center;
+    object-fit: cover;
+  }
+
+  .grid_cua2 {
+    grid-area: cua2;
+    position: relative;
+    text-align: center;
     align-items: center;
-   
-   }
-   .grid_cua3{
-     grid-area: cua3;
-     position: relative;
-     text-align: center;
-     object-fit: cover;
-   }
-   
-   .titulo {
-     grid-area: cua2;
-     font-size: 32px;
-     position: center;
-     margin-top: 3rem;
-     
-   }
-   
-   .titulo_copa {
-     grid-area: cua2;
-     font-size: 26px;
-     color: rgb(214, 194, 45);
-     position: center;
-   }
-   
-   .video{
-     padding: 0.5rem;
-     height: 300px;
-     width: 600px;
-   }
+
+    .video {
+      padding: 0.5rem;
+      min-width: fit-content
+    }
+  }
+
+  .grid_cua3 {
+    grid-area: cua3;
+    position: relative;
+    text-align: center;
+    object-fit: cover;
+  }
+
+  .titulo {
+    grid-area: cua2;
+    font-size: 32px;
+    position: center;
+    margin-top: 3rem;
+
+  }
+
+  .titulo_copa {
+    grid-area: cua2;
+    font-size: 26px;
+    color: rgb(214, 194, 45);
+    position: center;
+
+  }
+
+
 
 }
