@@ -118,9 +118,10 @@ header ul li {
   align-items: center;
 }
 
-.medio .grid_cua2 .video {
+.medio .grid_cua2 .img-fluid {
   padding: 0.5rem;
-  min-width: fit-content;
+  height: 300px;
+  width: 600px;
 }
 
 .medio .grid_cua3 {
@@ -264,7 +265,7 @@ header ul li {
   display: none;
 }
 
-.img-fluid {
+.img-fixture-mobil {
   display: none;
 }
 
@@ -324,10 +325,10 @@ header ul li {
     height: 60%;
     width: 100%;
   }
-  .rounded {
+  .img-fixture-escritorio {
     display: none;
   }
-  .img-fluid {
+  .img-fixture-mobil {
     display: flex;
   }
   .footer {
@@ -424,10 +425,6 @@ header ul li {
   .titulo_copa {
     font-size: 25px;
     color: #e4dd0d;
-  }
-  .video {
-    height: 50%;
-    width: 100%;
   }
   .footer {
     display: none;

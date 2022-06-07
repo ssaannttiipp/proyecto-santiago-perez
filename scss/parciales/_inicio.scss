@@ -32,9 +32,11 @@
     text-align: center;
     align-items: center;
 
-    .video {
+    .img-fluid {
       padding: 0.5rem;
-      min-width: fit-content
+      height: 300px;
+      width: 600px;
+      
     }
   }
 
